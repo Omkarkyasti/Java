@@ -1,0 +1,22 @@
+package classwork;
+
+interface EmployeeDetails {
+    void display();
+}
+
+class Employee implements EmployeeDetails {
+    public void display() {
+        System.out.println("Employee ID: 123");
+        System.out.println("Employee Name: Sam");
+        System.out.println("Employee Salary: 5000000000000000");
+        System.out.println("Employee Location: Bangalore");
+        System.out.println("Employee Phone No: 1234567890");
+    }
+}
+
+public class EmpDetail3 {
+    public static void main(String args[]) {
+        Employee emp = new Employee(); // Creating an instance of Employee
+        emp.display();
+    }
+}
